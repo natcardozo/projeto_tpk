@@ -1,12 +1,13 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
 }
 
 /*HEADER*/
 
 .header {
     padding: 10px;
-    background: #000000;
+    background: repeat-x #000000;
     width: 100%;
 }
 
@@ -340,3 +341,50 @@ footer p {
 }
 
 /*CONTATO*/
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+.input-radio {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin: 1em 5px;
+    justify-content: space-between;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #CCCCCC;
+    margin: 1em 0;
+}
+
+.checkbox {
+    display: inline-block;
+    margin: 1em auto;
+}
+
+.button {
+    display: block;
+    width: 60%;
+    margin: 2em auto;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fdfdfd;
+    transition: .5s all;
+}
+
+.button:hover {
+    background-color: #1faa00;
+    transform: scale(1.02);
+    cursor: pointer;
+}

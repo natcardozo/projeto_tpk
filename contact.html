@@ -28,7 +28,26 @@
             </div>
         </header>
         <main>
-            
+            <form>
+                <h2 class="subtitulo">Contact Us</h2>
+                <fieldset>
+                    <label for="patreon" class="input-radio"><input type="radio" name="patreon" value="patreon" class="input-radio" id="patreon">Patreon</label>
+                    <label for="not-patreon" class="input-radio"><input type="radio" name="patreon" value="not-patreon" class="input-radio" id="not-patreon">Not a Patreon</label>
+                </fieldset>
+
+                <label for="name">Full name</label>
+                <input type="text" id="name" class="input" required>
+
+                <label for="email" >Email</label>
+                <input type="email" id="email" placeholder="your@email.com" class="input" required>
+
+                <label for="message">Message</label>
+                <textarea cols="72" rows="10" id="message" class="input" placeholder="Type your message here." required></textarea>
+
+                <label for="checkbox"><input type="checkbox" id="checkbox" class="checkbox" checked> Receive newsletters</label>
+
+                <input type="submit" class="button" value="Send">
+            </form>
         </main>
         <footer>
             <img class="footer-logo" src="logo-preto.png">
