@@ -1,0 +1,335 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*HEADER*/
+
+.header {
+    padding: 10px;
+    background: #000000;
+    width: 100%;
+}
+
+.box {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo-header {
+    width: 20%;
+}
+
+.lista-nav {
+    font-size: 22px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+.item-escrito {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.iconlist-nav {
+    font-size: 22px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 115px;
+    top: 90px;
+}
+
+.icone-nav {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.logo-social {
+    width: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+/*PRINCIPAL*/
+
+.principal {
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.principal img {
+    padding: .2em;
+    border: 1px solid #000000;
+}
+
+.principal img:hover {
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.img-1 {
+    width: 200px;
+    float: right; 
+    margin: 0 0 20px 30px;
+}
+
+.img-2 {
+    width: 200px;
+    float: left; 
+    margin: 0 30px 20px 0;
+}
+
+.img-3 {
+    width: 200px;
+    float: right; 
+    margin: 20px 0 20px 30px;
+}
+
+.subtitulo {
+    font-size: 30px;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.principal p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+/*SECUNDÁRIA*/
+
+.secundaria {
+    width: 940px;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "conteudo-1" "conteudo-2" "conteudo-3";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+.subtitulo-box {
+    font-size: 25px;
+    margin: 0 0 1em 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.secundaria p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.box-1 {
+    grid-column: 1 / 2;
+    padding: 1em;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.box-2 {
+    grid-column: 2 / 3;
+    padding: 1em;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.box-3 {
+    grid-column: 3 / 3;
+    padding: 1em;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.box-1:hover, .box-2:hover, .box-3:hover {
+    border: 3px solid #1faa00;
+    transform: scale(1.03);
+}
+
+/*FOOTER*/
+
+footer {
+    clear: right;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background: #888888;
+    padding: 20px;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+/*PRODUTOS*/
+
+.subtitulo-produtos {
+    font-size: 30px;
+    margin: 1em 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.miniatures {
+    width: 940px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-gap: .5em;
+    margin-bottom: 3em;
+}
+
+.miniatures .destaques:first-child {
+    position: relative;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+}
+
+.miniatures .destaques:nth-child(2) {
+    position: relative;
+    grid-column: 4 / 4;
+    grid-row: 1 / 2;
+}
+
+.miniatures .destaques:nth-child(3) {
+    position: relative;
+    grid-column: 4 / 4;
+    grid-row: 2 / 3;
+}
+
+.miniatures .destaques:last-child {
+    position: relative;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+
+.destaques img {
+    background: cover no-repeat center center fixed;
+    max-height: 100%;
+    width: 100%;
+}
+
+.destaques h3 {
+    position: relative;
+    top: -53px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fdfdfd;
+    font-weight: bold;
+    font-size: 18px;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    height: 50px;
+    width: calc(100% - 15px);
+    padding-left: 15px;
+}
+
+.destaques h4 {
+    position: relative;
+    top: -33px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fdfdfd;
+    font-weight: bold;
+    font-size: 14px;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    height: 30px;
+    width: calc(100% - 15px);
+    padding-left: 15px;
+}
+
+.destaques:hover {
+    transform: scale(1.02)
+}
+
+.patreon-levels {
+    width: 940px;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "level-1" "level-2" "level-3";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 15% auto 15%;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+.level-1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.level-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.level-3 {
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.level-1 img, .level-2 img, .level-3 img {
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.patreon-levels p {
+    margin-bottom: 1em;
+}
+
+.patreon-button {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    padding: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background: #333333;
+    color: #fdfdfd;
+    font-weight: bold;
+}
+
+.patreon-button:hover {
+    background: #1faa00;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5)
+}
+
+.level-1:hover, .level-2:hover, .level-3:hover {
+    border: 3px solid #1faa00;
+    transform: scale(1.02);
+}
+
+/*CONTATO*/
