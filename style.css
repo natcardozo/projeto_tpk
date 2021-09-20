@@ -110,6 +110,7 @@ a {
 /*SECUNDÁRIA*/
 
 .secundaria {
+    clear: right;
     width: 940px;
     height: auto;
     margin: auto;
